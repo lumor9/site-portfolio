@@ -1,38 +1,96 @@
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  width: 60vw;
+  margin: 0 auto;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  min-height: 45vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.darkveil-canvas {
+  position: absolute;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.App-header div{
+  z-index: 1;
+}
+
+.App-header .text{
+  font-weight: 400;
+  font-size: 3.4rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 20px;
+  height: 30vh;
 }
 
-.App-link {
-  color: #61dafb;
+.App-header .text p{
+  margin: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.App-header .text span{
+  color: rgb(175, 70, 225);
+  font-weight: 600;
+}
+
+.App-main-div {
+  height: 100%;
+  margin: 0 auto;
+}
+
+.App-main-div p {
+  font-weight: 400;
+  font-size: 2.4rem;
+  text-align: left;
+}
+
+.App-main-div .div-boxes {
+  width: 100%;
+  height: 35vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 20px;
+  grid-auto-flow: column;
+}
+
+.grid-child .title{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  font-weight: 300;
+  font-size: 1.5rem;
+  height: 2vh;
+}
+
+.grid-child .title img {
+  width: auto;
+  height: 100%;
+}
+
+.grid-child .text p{
+  font-weight: 300;
+  font-size: 1.5rem;
+}
+
+.grid-child {
+  border-style: solid;
+  border-radius: var(--border-radius-px);
+  border-color: rgba(228, 228, 228, 0.6);
+  border-width: var(--border-width-px);
+  text-align: left;
+  padding: 50px;
+}
+
+.grid-child.big {
+  grid-row: span 2;
 }
