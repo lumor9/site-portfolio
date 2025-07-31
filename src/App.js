@@ -1,12 +1,16 @@
 import educationImg from './assets/Education.png'
 import linkImg from './assets/Link.png'
+import codeImg from './assets/Code.png'
 import './App.css';
-import { v4 } from 'uuid'
-import fetch from 'isomorphic-fetch'
-import { Component } from 'react';
 
+import InfoBlock from './modules/InfoBlock.js'
 import DarkVeil from './modules/DarkVeil.js';
 import Navbar from './modules/Navbar.js'
+import CardsBox from './modules/CardsBox.js'
+import AchievementBox from './modules/AchievementBox.js'
+
+
+
 function App() {
   return (
     <div className='App'>
@@ -25,18 +29,24 @@ function App() {
             <p>Обо мне</p>
           </div>
           <div className='div-boxes'>
-            <div className='grid-child'> 
-              <div className='title'> <img src={educationImg}/> Образование </div>
-              <div className='text'> <p> Учусь на 3 курсе РТУ МИРЭА по направлению Фуллстэк-разработка </p></div>
-            </div>
-
-            <div className='grid-child'> f</div>
-            <div className='grid-child big'> sf</div>
+            <InfoBlock title='Образование'srcImg={educationImg}><p>Учусь на 3 курсе РТУ МИРЭА по направлению Фуллстэк-разработка</p></InfoBlock>
+            <InfoBlock title='Контакты' srcImg={linkImg}> 
+              <nav>
+                <li>Почта</li>
+                <li>Телеграм</li>
+                <li>Гитхаб</li>
+                <li>Резюме</li>
+              </nav> 
+            </InfoBlock>
+            <InfoBlock gridRow={2} title={'Технологии'} srcImg={codeImg}><CardsBox/></InfoBlock>
           </div>
-          
+        
+          <div className='div-title'>
+              <p>Достижения</p>
+          </div>
+          <AchievementBox/>
         </div>
-
-
+        
       </main>
       
       <footer>

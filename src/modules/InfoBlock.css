@@ -1,0 +1,41 @@
+.grid-child .title{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  font-weight: 300;
+  font-size: 1.3rem;
+  height: 2vh;
+}
+
+.grid-child .title img {
+  width: auto;
+  height: 100%;
+}
+
+.grid-child p{
+    margin: 0;
+}
+
+.grid-child nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.grid-child nav li{
+    display: inline;
+}
+
+.grid-child {
+    display: flex;
+    flex-direction: column;
+    font-weight: 300;
+  font-size: var(--text-size-description);
+  border-style: solid;
+  border-radius: var(--border-radius-px);
+  border-color: rgba(228, 228, 228, 0.6);
+  border-width: var(--border-width-px);
+  text-align: left;
+  padding: 40px 40px;
+  gap: 30px;
+}

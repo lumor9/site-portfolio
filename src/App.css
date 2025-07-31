@@ -45,17 +45,20 @@
 .App-main-div {
   height: 100%;
   margin: 0 auto;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
 }
 
-.App-main-div p {
+.div-title p {
   font-weight: 400;
-  font-size: 2.4rem;
+  font-size: 2.0rem;
   text-align: left;
 }
 
 .App-main-div .div-boxes {
   width: 100%;
-  height: 35vh;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
@@ -63,34 +66,4 @@
   grid-auto-flow: column;
 }
 
-.grid-child .title{
-  display: flex;
-  flex-direction: row;
-  gap: 20px;
-  font-weight: 300;
-  font-size: 1.5rem;
-  height: 2vh;
-}
 
-.grid-child .title img {
-  width: auto;
-  height: 100%;
-}
-
-.grid-child .text p{
-  font-weight: 300;
-  font-size: 1.5rem;
-}
-
-.grid-child {
-  border-style: solid;
-  border-radius: var(--border-radius-px);
-  border-color: rgba(228, 228, 228, 0.6);
-  border-width: var(--border-width-px);
-  text-align: left;
-  padding: 50px;
-}
-
-.grid-child.big {
-  grid-row: span 2;
-}

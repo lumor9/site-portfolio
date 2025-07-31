@@ -1,0 +1,13 @@
+.achievement-box {
+    display: flex;
+    flex-direction: column;
+    font-weight: 300;
+  font-size: 1.5rem;
+  border-style: solid;
+  border-radius: var(--border-radius-px);
+  border-color: rgba(228, 228, 228, 0.6);
+  border-width: var(--border-width-px);
+  text-align: left;
+  padding: 45px;
+  gap: 30px;
+}

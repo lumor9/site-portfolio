@@ -4,6 +4,7 @@
   --border-radius-px: 50px;
   --border-color-rgb: rgba(170, 170, 170, 0.4);
   --border-width-px: 0.1px;
+  --text-size-description: 1.2rem;
 }
 
 body {

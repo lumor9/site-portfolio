@@ -4,9 +4,9 @@ function Navbar(){
     return(
         <div className="nav-header-div">
             <nav className="nav-header"> 
-                <li>Прив</li>
+                <li>Привет</li>
                 <li>Обо мне</li>
-                <li>Достижение</li>
+                <li>Достижения</li>
                 <li>Проекты</li> 
             </nav>
         </div>
