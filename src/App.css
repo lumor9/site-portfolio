@@ -1,7 +1,15 @@
 .App {
   text-align: center;
-  width: 60vw;
-  margin: 0 auto;
+  width: 70vw;
+  display: flex;
+  flex-direction: column;
+  margin: 2.5vh auto;
+  min-height: 100vh;
+  gap: 4vh;
+}
+
+main{
+  flex: 1;
 }
 
 .App-header {
@@ -14,6 +22,8 @@
 
 .darkveil-canvas {
   position: absolute;
+  top: 0;
+  left: 0;
   z-index: 0;
   pointer-events: none;
 }
@@ -67,3 +77,15 @@
 }
 
 
+
+hr {
+  color: rgba(228, 228, 228, 0.6);
+  border-width: var(--border-width-px);
+}
+
+footer{
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  gap:20px;
+}

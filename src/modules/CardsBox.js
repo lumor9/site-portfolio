@@ -2,7 +2,7 @@ import './CardsBox.css'
 import Card from './Card.js'
 import { v4 } from 'uuid'
 
-let technologies = ['React', 'Redux', 'HTML', 'CSS', 'JS', 'TS', 'ESLint', 'jest', 'Docker', 'Git', 'SASS', 'SCSS', 'Python', 'C++', 'PostgreSQL', 'Figma'];
+let technologies = ['React', 'Redux', 'HTML', 'CSS', 'JS', 'TS', 'ESLint', 'jest', 'Webpack','Docker', 'Git', 'SASS', 'SCSS', 'Python', 'C++', 'PostgreSQL', 'Figma'];
 
 function CardsBox(){
     return(

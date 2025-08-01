@@ -8,6 +8,7 @@ import DarkVeil from './modules/DarkVeil.js';
 import Navbar from './modules/Navbar.js'
 import CardsBox from './modules/CardsBox.js'
 import AchievementBox from './modules/AchievementBox.js'
+import ProjectBox from './modules/ProjectBox.js'
 
 
 
@@ -49,12 +50,14 @@ function App() {
           <div className='div-title'>
               <p>Проекты</p>
           </div>
+          <ProjectBox/>
         </div>
         
       </main>
       
       <footer>
-
+        <div><hr></hr></div>
+        <div>lumor9</div>
       </footer>
     </div>
   );

@@ -23,7 +23,7 @@
 }
 
 .title-div .title{
-    font-size: 1.5rem;
+    font-size: var(--text-size-title);
 }
 
 .title-div .role, .title-div .date{
