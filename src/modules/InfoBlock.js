@@ -4,7 +4,6 @@ function InfoBlock(
     {
         srcImg,
         title='noTitle',
-        text,
         gridRow,
         children
     }

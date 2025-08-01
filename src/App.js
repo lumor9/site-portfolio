@@ -45,6 +45,10 @@ function App() {
               <p>Достижения</p>
           </div>
           <AchievementBox/>
+
+          <div className='div-title'>
+              <p>Проекты</p>
+          </div>
         </div>
         
       </main>

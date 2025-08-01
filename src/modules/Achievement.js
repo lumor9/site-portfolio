@@ -3,12 +3,21 @@ import './Achievement.css'
 function Achievement({title, description, date, role, img}){
     return(
         <div className='achievemnt'>
-            <div> 
-                <div>
-                    {title}
-                    {role}
+            <div className='title-div'> 
+                <div className='name'>
+                    <div className='title'>
+                        {title}
+                    </div>
+                    <div className='role'>
+                        {role}
+                    </div>
                 </div>
-                {date}
+                <div className='date'>
+                    {date}
+                </div>
+            </div>
+            <div className='description-div'>
+                {description}
             </div>
         </div>
     );

@@ -1,0 +1,31 @@
+.achievemnt{
+    border-style: solid;
+    border-radius: var(--border-radius-px);
+    border-color: rgba(228, 228, 228, 0.6);
+    border-width: var(--border-width-px);
+    padding: 35px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: left;
+}
+
+.title-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.title-div .name{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.title-div .title{
+    font-size: 1.5rem;
+}
+
+.title-div .role, .title-div .date{
+    font-size: var(--text-size-description);
+}
