@@ -1,4 +1,5 @@
 import './Navbar.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function Navbar(){
     return(

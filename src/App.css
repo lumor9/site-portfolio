@@ -1,6 +1,5 @@
 .App {
   text-align: center;
-  width: 65vw;
   display: flex;
   flex-direction: column;
   margin: 2.5vh auto;
@@ -55,30 +54,15 @@ main{
 
 .App-main-div {
   height: 100%;
-  margin: 0 auto;
   position: relative;
   z-index: 1;
-  display: flex;
-  flex-direction: column;
 }
 
 .div-title p {
   font-weight: 400;
   font-size: 2.0rem;
   text-align: left;
-}
-
-.App-main-div .div-boxes {
-  width: 100%;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  gap: 20px;
-  grid-auto-flow: column;
-}
-
-#technologies{
-  grid-row: span 2;
+  margin: 5vh 0 0 0;
 }
 
 hr {
@@ -97,12 +81,12 @@ footer .nickName{
   color: var(--text-color-description);
 }
 
-.div-boxes a{
+.App-main-div a{
   text-decoration: none;
   color: var(--text-color-description);
 }
 
-.div-boxes a:hover{
+.App-main-div a:hover{
   color: white;
   transition: 0.3s;
 }

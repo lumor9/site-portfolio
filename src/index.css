@@ -10,11 +10,14 @@
   scroll-behavior: smooth;
 }
 
+*{
+  box-sizing: border-box;
+}
+
 body {
-  background-color:black;
-  color: white;
-  margin: 0;
-  font-family: 'Inter';
+  background-color:black !important;
+  color: white !important;
+  font-family: 'Inter' !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

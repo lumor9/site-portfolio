@@ -24,8 +24,8 @@ let projects = [{
 
 function ProjectBox(){
     return(
-        <div className='project-box'>
-            {projects.map((pro, ind) => <Project title={pro.title} description={pro.description} img={pro.img} key={v4()}/>)}
+        <div className='project-box row g-3'>
+            {projects.map(pro => <Project title={pro.title} description={pro.description} img={pro.img} key={v4()}/>)}
         </div>
     );
 }

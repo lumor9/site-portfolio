@@ -3,6 +3,7 @@ import linkImg from './assets/Link.png'
 import codeImg from './assets/Code.png'
 import './App.css';
 import { motion } from "motion/react"
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 import InfoBlock from './modules/InfoBlock.js'
 import DarkVeil from './modules/DarkVeil.js';
@@ -16,11 +17,12 @@ import ProjectBox from './modules/ProjectBox.js'
 function App() {
   return (
     <div className='App'>
+
       <motion.header 
         initial={{ opacity: 0}}
         whileInView={{ opacity: 1, transition: {delay: 0.1, duration: 0.6} }}
         viewport={{once: true, amount: 0.1}}
-        className='App-header'
+        className='App-header container'
       >
         <DarkVeil hueShift={16} speed={1}/>
         <Navbar/>
@@ -31,39 +33,47 @@ function App() {
       </motion.header>
       
       <main>
-        <div className='App-main-div'>
-          <motion.div className='div-title' id='aboutMe'
-          initial={{ opacity: 0, y: 35 }}
-          whileInView={{ opacity: 1, y: 0, transition: {delay: 0.2, duration: 0.3} }}
-          viewport={{once: false, amount: 0.1}}
-          >
-            <p>Обо мне</p>
-          </motion.div>
-          <div className='div-boxes'>
-            <motion.div 
-              initial={{ opacity: 0, x: -35 }}
-              whileInView={{ opacity: 1, x: 0, transition: {delay: 0.2, duration: 0.3} }}
-              viewport={{once: false, amount: 0.1}}
-            >
-              <InfoBlock title='Образование'srcImg={educationImg}><p>Учусь на 3 курсе РТУ МИРЭА по направлению Фуллстэк-разработка</p></InfoBlock>
-            </motion.div>
+        <div className='App-main-div container d-flex flex-column gap-4'>
 
-            <motion.div 
-              initial={{ opacity: 0, x: -35 }}
-              whileInView={{ opacity: 1, x: 0, transition: {delay: 0.2, duration: 0.3} }}
+          <div className = 'row'>
+            <motion.div className='col-12 div-title' id='aboutMe'
+              initial={{ opacity: 0, y: 35 }}
+              whileInView={{ opacity: 1, y: 0, transition: {delay: 0.2, duration: 0.3} }}
               viewport={{once: false, amount: 0.1}}
             >
-              <InfoBlock title='Контакты' srcImg={linkImg}> 
-                <nav>
-                  <li><a href='andronovaarina70@gmail.com'>Почта</a></li>
-                  <li><a href='https://t.me/lumor9'>Телеграм</a></li>
-                  <li><a href='https://github.com/lumor9'>Гитхаб</a></li>
-                  <li><a href=''>Резюме</a></li>
-                </nav> 
-              </InfoBlock>
+              <p>Обо мне</p>
             </motion.div>
-            
+          </div>
+          
+          <div className = 'row g-3 align-items-stretch'>
+            <div className = 'col-md-6 col-sm-12 d-flex flex-column gap-3'>
+              <motion.div
+                initial={{ opacity: 0, x: -35 }}
+                whileInView={{ opacity: 1, x: 0, transition: {delay: 0.2, duration: 0.3} }}
+                viewport={{once: false, amount: 0.1}}
+                className='flex-grow-1'
+              >
+                <InfoBlock title='Образование'srcImg={educationImg}><p>Учусь на 3 курсе РТУ МИРЭА по направлению Фуллстэк-разработка</p></InfoBlock>
+              </motion.div>
+
+              <motion.div
+                initial={{ opacity: 0, x: -35 }}
+                whileInView={{ opacity: 1, x: 0, transition: {delay: 0.2, duration: 0.3} }}
+                viewport={{once: false, amount: 0.1}}
+                className='flex-grow-1'
+              >
+                <InfoBlock title='Контакты' srcImg={linkImg}> 
+                  <nav>
+                    <li><a href='andronovaarina70@gmail.com'>Почта</a></li>
+                    <li><a href='https://t.me/lumor9'>Телеграм</a></li>
+                    <li><a href='https://github.com/lumor9'>Гитхаб</a></li>
+                    <li><a href=''>Резюме</a></li>
+                  </nav> 
+                </InfoBlock>
+              </motion.div>
+            </div>
             <motion.div 
+              className = 'col-md-6 col-sm-12'
               initial={{ opacity: 0, x: 35 }}
               whileInView={{ opacity: 1, x: 0, transition: {delay: 0.2, duration: 0.3} }}
               viewport={{once: false, amount: 0.1}}
@@ -71,9 +81,8 @@ function App() {
             >
               <InfoBlock title={'Технологии'} srcImg={codeImg}><CardsBox/></InfoBlock>
             </motion.div>
-            
           </div>
-        
+          
           <motion.div className='div-title' id='achievements'
             initial={{ opacity: 0, y: 35 }}
             whileInView={{ opacity: 1, y: 0, transition: {delay: 0.2, duration: 0.3} }}
@@ -99,10 +108,12 @@ function App() {
         initial={{ opacity: 0, y: 35 }}
         whileInView={{ opacity: 1, y: 0, transition: {delay: 0.2, duration: 0.3} }}
         viewport={{once: false, amount: 0.1}}
+        className='container'
       >
         <div><hr></hr></div>
         <div className='nickName'>lumor9</div>
       </motion.footer>
+
     </div>
   );
 }
