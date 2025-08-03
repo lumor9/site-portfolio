@@ -2,6 +2,7 @@ import educationImg from './assets/Education.png'
 import linkImg from './assets/Link.png'
 import codeImg from './assets/Code.png'
 import './App.css';
+import { motion } from "motion/react"
 
 import InfoBlock from './modules/InfoBlock.js'
 import DarkVeil from './modules/DarkVeil.js';
@@ -15,50 +16,93 @@ import ProjectBox from './modules/ProjectBox.js'
 function App() {
   return (
     <div className='App'>
-      <header className='App-header'>
+      <motion.header 
+        initial={{ opacity: 0}}
+        whileInView={{ opacity: 1, transition: {delay: 0.1, duration: 0.6} }}
+        viewport={{once: true, amount: 0.1}}
+        className='App-header'
+      >
         <DarkVeil hueShift={16} speed={1}/>
         <Navbar/>
         <div className='text'>
           <p>Меня зовут <span>Арина</span></p>
           <p>Я <span>Frontend</span> разработчик</p>
         </div>
-      </header>
+      </motion.header>
       
       <main>
         <div className='App-main-div'>
-          <div className='div-title'>
+          <motion.div className='div-title'
+          initial={{ opacity: 0, y: 35 }}
+          whileInView={{ opacity: 1, y: 0, transition: {delay: 0.2, duration: 0.3} }}
+          viewport={{once: false, amount: 0.1}}
+          >
             <p>Обо мне</p>
-          </div>
+          </motion.div>
           <div className='div-boxes'>
-            <InfoBlock title='Образование'srcImg={educationImg}><p>Учусь на 3 курсе РТУ МИРЭА по направлению Фуллстэк-разработка</p></InfoBlock>
-            <InfoBlock title='Контакты' srcImg={linkImg}> 
-              <nav>
-                <li>Почта</li>
-                <li>Телеграм</li>
-                <li>Гитхаб</li>
-                <li>Резюме</li>
-              </nav> 
-            </InfoBlock>
-            <InfoBlock gridRow={2} title={'Технологии'} srcImg={codeImg}><CardsBox/></InfoBlock>
+            <motion.div 
+              initial={{ opacity: 0, x: -35 }}
+              whileInView={{ opacity: 1, x: 0, transition: {delay: 0.2, duration: 0.3} }}
+              viewport={{once: false, amount: 0.1}}
+            >
+              <InfoBlock title='Образование'srcImg={educationImg}><p>Учусь на 3 курсе РТУ МИРЭА по направлению Фуллстэк-разработка</p></InfoBlock>
+            </motion.div>
+
+            <motion.div 
+              initial={{ opacity: 0, x: -35 }}
+              whileInView={{ opacity: 1, x: 0, transition: {delay: 0.2, duration: 0.3} }}
+              viewport={{once: false, amount: 0.1}}
+            >
+              <InfoBlock title='Контакты' srcImg={linkImg}> 
+                <nav>
+                  <li>Почта</li>
+                  <li>Телеграм</li>
+                  <li>Гитхаб</li>
+                  <li>Резюме</li>
+                </nav> 
+              </InfoBlock>
+            </motion.div>
+            
+            <motion.div 
+              initial={{ opacity: 0, x: 35 }}
+              whileInView={{ opacity: 1, x: 0, transition: {delay: 0.2, duration: 0.3} }}
+              viewport={{once: false, amount: 0.1}}
+              id='technologies'
+            >
+              <InfoBlock title={'Технологии'} srcImg={codeImg}><CardsBox/></InfoBlock>
+            </motion.div>
+            
           </div>
         
-          <div className='div-title'>
+          <motion.div className='div-title'
+            initial={{ opacity: 0, y: 35 }}
+            whileInView={{ opacity: 1, y: 0, transition: {delay: 0.2, duration: 0.3} }}
+            viewport={{once: false, amount: 0.1}}
+          >
               <p>Достижения</p>
-          </div>
+          </motion.div>
           <AchievementBox/>
 
-          <div className='div-title'>
+          <motion.div className='div-title'
+            initial={{ opacity: 0, y: 35 }}
+            whileInView={{ opacity: 1, y: 0, transition: {delay: 0.2, duration: 0.3} }}
+            viewport={{once: false, amount: 0.1}}
+          >
               <p>Проекты</p>
-          </div>
+          </motion.div>
           <ProjectBox/>
         </div>
         
       </main>
       
-      <footer>
+      <motion.footer
+        initial={{ opacity: 0, y: 35 }}
+        whileInView={{ opacity: 1, y: 0, transition: {delay: 0.2, duration: 0.3} }}
+        viewport={{once: false, amount: 0.1}}
+      >
         <div><hr></hr></div>
-        <div>lumor9</div>
-      </footer>
+        <div className='nickName'>lumor9</div>
+      </motion.footer>
     </div>
   );
 }

@@ -29,3 +29,47 @@
 .title-div .role, .title-div .date{
     font-size: var(--text-size-description);
 }
+
+.name a{
+    text-decoration: none;
+    color:  rgb(175, 70, 225);
+    font-weight: 500;
+}
+
+.achievemnt .description-div, .achievemnt .date{
+    color: var(--text-color-description);
+}
+
+.achievemnt{
+  position: relative;
+  color: var(--text-color-description);
+  overflow: hidden;
+  background: transparent;
+}
+
+.achievemnt::before{
+  content:'';
+  position: absolute;
+  top: var(--y);
+  left: var(--x);
+  transform: translate(-50%, -50%);
+  background: radial-gradient(rgb(211, 60, 248), transparent, transparent);
+  width: 30vw;
+  height: 30vw;
+  opacity: 0;
+  transition: 0.3s, top 0s, left 0s;
+  z-index: -2;
+}
+
+.achievemnt:hover::before{
+  opacity: 1;
+}
+
+.achievemnt::after{
+  content: '';
+  position: absolute;
+  inset: 5px;
+  border-radius: var(--border-radius-px);
+  background: rgba(0, 0, 0, 0.75);
+  z-index: -1;
+}

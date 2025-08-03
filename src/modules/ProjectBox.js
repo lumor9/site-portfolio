@@ -4,6 +4,7 @@ import { v4 } from 'uuid'
 import LawyerHelper from '../assets/LawyearHelper.jpg'
 import VictoryVoiceImg from '../assets/VictoryVoice.jpg'
 
+
 let projects = [{
         title: 'Помощник юриста',
         description:`Сайт, позволяющий быстро заполнять юридические документы`,
@@ -24,7 +25,7 @@ let projects = [{
 function ProjectBox(){
     return(
         <div className='project-box'>
-            {projects.map(pro => <Project title={pro.title} description={pro.description} img={pro.img} key={v4()}/>)}
+            {projects.map((pro, ind) => <Project title={pro.title} description={pro.description} img={pro.img} key={v4()}/>)}
         </div>
     );
 }

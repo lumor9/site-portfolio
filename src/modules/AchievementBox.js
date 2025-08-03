@@ -2,6 +2,7 @@ import './AchievementBox.css'
 import Achievement from './Achievement.js'
 import { v4 } from 'uuid'
 
+
 let achievements = [
     {
         title: 'Победитель Хакатон "Код Победы"',
@@ -14,6 +15,7 @@ let achievements = [
         date:'Июнь 2025',
         role:'Frontend разработчик',
         img:'',
+        src:'https://www.mirea.ru/news/podvedeny-itogi-studencheskogo-khakatona-kod-pobedy/',
     },
     {
         title: 'Финалист ФИЦ Хакатон',
@@ -23,13 +25,14 @@ let achievements = [
         date:'Декабрь 2024',
         role:'Frontend разработчик',
         img:'',
+        src:'https://xn--2024-94d5ep.xn--p1ai/#forumtracks',
     },
 ];
 
 function AchievementBox(){
     return(
         <div className='achievements-box'>
-          {achievements.map(ach => <Achievement title={ach.title} description={ach.description} date={ach.date} img={ach.img} role={ach.role} key={v4()}/>)}
+          {achievements.map((ach, ind) => <Achievement title={ach.title} description={ach.description} date={ach.date} img={ach.img} role={ach.role} key={v4()} src={ach.src} direction={ind%2 === 0 ? 'left' : 'right'}/>)}
         </div>
     )
 }

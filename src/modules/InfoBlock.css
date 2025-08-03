@@ -5,6 +5,7 @@
   font-weight: 300;
   font-size: 1.3rem;
   height: 2vh;
+  color: white;
 }
 
 .grid-child .title img {
@@ -38,4 +39,38 @@
   text-align: left;
   padding: 35px 40px;
   gap: 30px;
+}
+
+.grid-child{
+  position: relative;
+  color: var(--text-color-description);
+  overflow: hidden;
+  background: transparent;
+}
+
+.grid-child::before{
+  content:'';
+  position: absolute;
+  top: var(--y);
+  left: var(--x);
+  transform: translate(-50%, -50%);
+  background: radial-gradient(rgb(211, 60, 248), transparent, transparent);
+  width: 30vw;
+  height: 30vw;
+  opacity: 0;
+  transition: 0.3s, top 0s, left 0s;
+  z-index: -2;
+}
+
+.grid-child:hover::before{
+  opacity: 1;
+}
+
+.grid-child::after{
+  content: '';
+  position: absolute;
+  inset: 5px;
+  border-radius: var(--border-radius-px);
+  background: rgba(0, 0, 0, 0.75);
+  z-index: -1;
 }

@@ -9,13 +9,10 @@
     height: 40vh;
     overflow: hidden;
 }
-
 .project .title{
-    font-size: var(--text-size-title);
-}
-
-.project .title{
-    font-size: var(--text-size-description);
+  font-size: var(--text-size-description);
+  color: white;
+  font-weight: 500;
 }
 
 .project .img-div{
@@ -26,7 +23,7 @@
 
 .project img{
     object-fit: cover;
-    height: 200%;
+    height: 150%;
 }
 
 .project .text{
@@ -34,4 +31,42 @@
     display: flex;
     flex-direction: column;
     gap: 2.5vh;
+}
+
+.project .description{
+    color: var(--text-color-description);
+}
+
+.project{
+  position: relative;
+  color: var(--text-color-description);
+  overflow: hidden;
+  background: transparent;
+}
+
+.project::before{
+  content:'';
+  position: absolute;
+  top: var(--y);
+  left: var(--x);
+  transform: translate(-50%, -50%);
+  background: radial-gradient(rgb(211, 60, 248), transparent, transparent);
+  width: 30vw;
+  height: 30vw;
+  opacity: 0;
+  transition: 0.3s, top 0s, left 0s;
+  z-index: -2;
+}
+
+.project:hover::before{
+  opacity: 1;
+}
+
+.project::after{
+  content: '';
+  position: absolute;
+  inset: 5px;
+  border-radius: var(--border-radius-px);
+  background: rgba(0, 0, 0, 0.75);
+  z-index: -1;
 }

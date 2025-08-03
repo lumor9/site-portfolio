@@ -3,8 +3,9 @@
 :root {
   --border-radius-px: 50px;
   --border-color-rgb: rgba(170, 170, 170, 0.4);
+  --text-color-description: rgb(163, 163, 163);
   --border-width-px: 0.1px;
-  --text-size-description: 1.2rem;
+  --text-size-description: 1.1rem;
   --text-size-title: 1.5rem;
 }
 
