@@ -24,7 +24,7 @@ function App() {
       >
         <DarkVeil hueShift={16} speed={1}/>
         <Navbar/>
-        <div className='text'>
+        <div className='text' id='hello'>
           <p>Меня зовут <span>Арина</span></p>
           <p>Я <span>Frontend</span> разработчик</p>
         </div>
@@ -32,7 +32,7 @@ function App() {
       
       <main>
         <div className='App-main-div'>
-          <motion.div className='div-title'
+          <motion.div className='div-title' id='aboutMe'
           initial={{ opacity: 0, y: 35 }}
           whileInView={{ opacity: 1, y: 0, transition: {delay: 0.2, duration: 0.3} }}
           viewport={{once: false, amount: 0.1}}
@@ -55,10 +55,10 @@ function App() {
             >
               <InfoBlock title='Контакты' srcImg={linkImg}> 
                 <nav>
-                  <li>Почта</li>
-                  <li>Телеграм</li>
-                  <li>Гитхаб</li>
-                  <li>Резюме</li>
+                  <li><a href='andronovaarina70@gmail.com'>Почта</a></li>
+                  <li><a href='https://t.me/lumor9'>Телеграм</a></li>
+                  <li><a href='https://github.com/lumor9'>Гитхаб</a></li>
+                  <li><a href=''>Резюме</a></li>
                 </nav> 
               </InfoBlock>
             </motion.div>
@@ -74,7 +74,7 @@ function App() {
             
           </div>
         
-          <motion.div className='div-title'
+          <motion.div className='div-title' id='achievements'
             initial={{ opacity: 0, y: 35 }}
             whileInView={{ opacity: 1, y: 0, transition: {delay: 0.2, duration: 0.3} }}
             viewport={{once: false, amount: 0.1}}
@@ -83,7 +83,7 @@ function App() {
           </motion.div>
           <AchievementBox/>
 
-          <motion.div className='div-title'
+          <motion.div className='div-title' id='projects'
             initial={{ opacity: 0, y: 35 }}
             whileInView={{ opacity: 1, y: 0, transition: {delay: 0.2, duration: 0.3} }}
             viewport={{once: false, amount: 0.1}}

@@ -1,5 +1,10 @@
 .card{
-  background-color: rgba(39, 31, 77, 0.5);
+  background-color: rgba(48, 36, 105, 0.5);
   padding: 10px 15px;
   border-radius: var(--border-radius-px);
+}
+.card:hover{
+  background-color: rgba(35, 22, 102, 0.5);
+  color: rgb(226, 226, 226);
+  transition: 0.3s;
 }

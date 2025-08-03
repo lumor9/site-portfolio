@@ -50,12 +50,12 @@
 .achievemnt::before{
   content:'';
   position: absolute;
-  top: var(--y);
-  left: var(--x);
+  top: 0;
+  left: 0;
   transform: translate(-50%, -50%);
   background: radial-gradient(rgb(211, 60, 248), transparent, transparent);
-  width: 30vw;
-  height: 30vw;
+  width: 60vw;
+  height: 60vw;
   opacity: 0;
   transition: 0.3s, top 0s, left 0s;
   z-index: -2;

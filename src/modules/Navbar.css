@@ -1,15 +1,25 @@
 .nav-header-div {
-    padding: 2.2vh;
-    font-weight: 400;
-    font-size: var(--text-size-description);
-    border-style: solid;
-    border-width: 0.1px;
-    border-color: var(--border-color-rgb);
-    border-radius: var(--border-radius-px);
-    background-color: rgba(155, 155, 155, 0.1);
+  padding: 2.2vh;
+  font-weight: 400;
+  font-size: var(--text-size-description);
+  border-style: solid;
+  border-width: 0.1px;
+  border-color: var(--border-color-rgb);
+  border-radius: var(--border-radius-px);
+  background-color: rgba(155, 155, 155, 0.1);
 }
 
 .nav-header li {
   display: inline;
   margin: 0 5vh;
+}
+
+.nav-header a{
+  text-decoration: none;
+  color: var(--text-color-description);
+}
+
+.nav-header a:hover{
+  color: white;
+  transition: 0.3s;
 }

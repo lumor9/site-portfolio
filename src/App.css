@@ -96,3 +96,13 @@ footer{
 footer .nickName{
   color: var(--text-color-description);
 }
+
+.div-boxes a{
+  text-decoration: none;
+  color: var(--text-color-description);
+}
+
+.div-boxes a:hover{
+  color: white;
+  transition: 0.3s;
+}
