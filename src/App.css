@@ -17,34 +17,30 @@ main{
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  gap: 6vh;
+  gap: 8vh;
 }
 
 .darkveil-canvas {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 0;
+  z-index: -1;
   pointer-events: none;
-}
-
-.App-header div{
-  z-index: 1;
 }
 
 .App-header .text{
   font-weight: 400;
-  font-size: 3.4rem;
+  font-size: clamp(1.5rem, 7vw, 3.4rem);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 20px;
   height: 25vh;
 }
 
 .App-header .text p{
   margin: 0;
+  line-height: 2;
 }
 
 .App-header .text span{

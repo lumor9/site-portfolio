@@ -24,6 +24,7 @@
 
 .title-div .title{
     font-size: var(--text-size-title);
+    width: 50vw;
 }
 
 .title-div .role, .title-div .date{
