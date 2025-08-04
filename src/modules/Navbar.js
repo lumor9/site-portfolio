@@ -13,7 +13,7 @@ function Navbar(){
                         <img src={menuImg} alt="Меню"/>
                     </button>
                     <div className="collapse navbar-collapse" id="navbarNav">
-                        <ul className="nav-header ms-auto navbar-nav flex-sm-row flex-column justify-content-space-around">
+                        <ul className="nav-header ms-auto navbar-nav flex-sm-row flex-column justify-content-around">
                             <li><a className='px-3' href='#hello'>Привет</a></li>
                             <li><a className='px-3' href='#aboutMe'>Обо мне</a></li>
                             <li><a className='px-3' href='#achievements'>Достижения</a></li>

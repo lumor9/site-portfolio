@@ -7,25 +7,28 @@ import VictoryVoiceImg from '../assets/VictoryVoice.jpg'
 
 let projects = [{
         title: 'Помощник юриста',
-        description:`Сайт, позволяющий быстро заполнять юридические документы`,
+        description:`Сайт для быстрого заполнения юридических документов`,
         img:LawyerHelper,
+        technologies: ['React', 'JS', 'Flask'],
     },
     {
         title: 'Голос победы',
-        description:`Веб-приложение с библиотекой музыки и функцией реставрации песен военных лет`,
+        description:`Музыкальная библиотека с функцией реставрации песен военных лет`,
         img:VictoryVoiceImg,
+        technologies: ['VueJS', 'JS', 'ASP.NET Core'],
     },
     {
         title: 'Что то',
         description:`Что то будет`,
         img:VictoryVoiceImg,
+        technologies: ['VueJS', 'JS', 'ASP.NET Core'],
     },
 ]
 
 function ProjectBox(){
     return(
-        <div className='project-box row g-3'>
-            {projects.map(pro => <Project title={pro.title} description={pro.description} img={pro.img} key={v4()}/>)}
+        <div className='project-box row g-3 align-items-stretch'>
+            {projects.map(pro => <Project title={pro.title} description={pro.description} img={pro.img} key={v4()} list={pro.technologies}/>)}
         </div>
     );
 }
