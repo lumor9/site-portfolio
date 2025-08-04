@@ -67,7 +67,7 @@ function App() {
                     <li><a href='andronovaarina70@gmail.com'>Почта</a></li>
                     <li><a href='https://t.me/lumor9'>Телеграм</a></li>
                     <li><a href='https://github.com/lumor9'>Гитхаб</a></li>
-                    <li><a href=''>Резюме</a></li>
+                    <li><a href='https://github.com/lumor9'>Резюме</a></li>
                   </nav> 
                 </InfoBlock>
               </motion.div>
