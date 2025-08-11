@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/site-portfolio/static/css/main.ed9b0b71.css",
-    "main.js": "/site-portfolio/static/js/main.a1a4d391.js",
+    "main.css": "/site-portfolio/static/css/main.b65ba047.css",
+    "main.js": "/site-portfolio/static/js/main.dd39d10a.js",
     "static/js/453.8dee0978.chunk.js": "/site-portfolio/static/js/453.8dee0978.chunk.js",
     "static/media/Inter-BoldItalic.woff?v=3.12": "/site-portfolio/static/media/Inter-BoldItalic.098968c5de9fde445e1c.woff",
     "static/media/Inter-SemiBoldItalic.woff?v=3.12": "/site-portfolio/static/media/Inter-SemiBoldItalic.d7ac4efb581a32a55fce.woff",
@@ -39,15 +39,13 @@
     "static/media/Inter-Black.woff2?v=3.12": "/site-portfolio/static/media/Inter-Black.769f5bb9abd2e78ec82b.woff2",
     "static/media/Inter-Thin.woff2?v=3.12": "/site-portfolio/static/media/Inter-Thin.a13be6d189d0f0489e88.woff2",
     "static/media/Inter-Regular.woff2?v=3.12": "/site-portfolio/static/media/Inter-Regular.7c370fde6764d889efe6.woff2",
-    "static/media/VictoryVoice.jpg": "/site-portfolio/static/media/VictoryVoice.4f4632496342bad8e8a7.jpg",
-    "static/media/LawyearHelper.jpg": "/site-portfolio/static/media/LawyearHelper.1891d476b69f13f2fa0e.jpg",
     "index.html": "/site-portfolio/index.html",
-    "main.ed9b0b71.css.map": "/site-portfolio/static/css/main.ed9b0b71.css.map",
-    "main.a1a4d391.js.map": "/site-portfolio/static/js/main.a1a4d391.js.map",
+    "main.b65ba047.css.map": "/site-portfolio/static/css/main.b65ba047.css.map",
+    "main.dd39d10a.js.map": "/site-portfolio/static/js/main.dd39d10a.js.map",
     "453.8dee0978.chunk.js.map": "/site-portfolio/static/js/453.8dee0978.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ed9b0b71.css",
-    "static/js/main.a1a4d391.js"
+    "static/css/main.b65ba047.css",
+    "static/js/main.dd39d10a.js"
   ]
 }
