@@ -1,16 +1,13 @@
-import educationImg from './assets/Education.png'
-import linkImg from './assets/Link.png'
-import codeImg from './assets/Code.png'
 import './App.css';
 import { motion } from "motion/react"
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import InfoBlock from './modules/InfoBlock.js'
-import DarkVeil from './modules/DarkVeil.js';
-import Navbar from './modules/Navbar.js'
-import CardsBox from './modules/CardsBox.js'
-import AchievementBox from './modules/AchievementBox.js'
-import ProjectBox from './modules/ProjectBox.js'
+import InfoBlock from './components/InfoBlock/InfoBlock.js'
+import DarkVeil from './components/DarkVeil/DarkVeil.js';
+import Navbar from './components/Navbar/Navbar.js'
+import CardsBox from './components/CardsBox/CardsBox.js'
+import AchievementBox from './components/AchievementBox/AchievementBox.js'
+import ProjectBox from './components/ProjectBox/ProjectBox.js'
 
 
 
@@ -20,16 +17,20 @@ function App() {
 
       <motion.header 
         initial={{ opacity: 0}}
-        whileInView={{ opacity: 1, transition: {delay: 0.1, duration: 0.6} }}
+        whileInView={{ opacity: 1, transition: {delay: 0.1, duration: 1.2} }}
         viewport={{once: true, amount: 0.1}}
         className='App-header container'
       >
         <DarkVeil hueShift={16} speed={1}/>
         <Navbar/>
-        <div className='text' id='hello'>
+        <motion.div 
+          initial={{ y:35}}
+          whileInView={{ y:0, transition: {delay: 0.1, duration: 0.8} }}
+          viewport={{once: true, amount: 0.1}}
+          className='text' id='hello'>
           <p>Меня зовут <span>Арина</span></p>
           <p>Я <span>Frontend</span> разработчик</p>
-        </div>
+        </motion.div>
       </motion.header>
       
       <main>
@@ -53,7 +54,7 @@ function App() {
                 viewport={{once: false, amount: 0.1}}
                 className='flex-grow-1'
               >
-                <InfoBlock title='Образование'srcImg={educationImg}><p>Учусь на 3 курсе РТУ МИРЭА по направлению Фуллстэк-разработка</p></InfoBlock>
+                <InfoBlock title='Образование'srcImg={`${process.env.PUBLIC_URL}/assets/Education.png`}><p>Учусь на 3 курсе РТУ МИРЭА по направлению Фуллстэк-разработка</p></InfoBlock>
               </motion.div>
 
               <motion.div
@@ -62,9 +63,9 @@ function App() {
                 viewport={{once: false, amount: 0.1}}
                 className='flex-grow-1'
               >
-                <InfoBlock title='Контакты' srcImg={linkImg}> 
-                  <nav>
-                    <li><a href='andronovaarina70@gmail.com'>Почта</a></li>
+                <InfoBlock title='Контакты' srcImg={`${process.env.PUBLIC_URL}/assets/Link.png`}> 
+                  <nav className='d-flex flex-lg-row flex-column justify-content-sm-around gap-4 h-100 align-items-lg-start align-items-center'>
+                    <li><a href='mailto:andronovaarina70@gmail.com'>Почта</a></li>
                     <li><a href='https://t.me/lumor9'>Телеграм</a></li>
                     <li><a href='https://github.com/lumor9'>Гитхаб</a></li>
                     <li><a href='https://github.com/lumor9'>Резюме</a></li>
@@ -79,7 +80,7 @@ function App() {
               viewport={{once: false, amount: 0.1}}
               id='technologies'
             >
-              <InfoBlock title={'Технологии'} srcImg={codeImg}><CardsBox/></InfoBlock>
+              <InfoBlock title={'Технологии'} srcImg={`${process.env.PUBLIC_URL}/assets/Code.png`}><CardsBox/></InfoBlock>
             </motion.div>
           </div>
           
