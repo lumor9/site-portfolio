@@ -35,7 +35,7 @@
 }
 
 .project img{
-  height: 200%;
+  height: 150%;
 }
 
 .project .text{
@@ -80,11 +80,18 @@
   z-index: -1;
 }
 
-
-
-@media (min-width: 1200px) {
-  .project{
+.project{
     height: 50vh;
+  }
+  .project .top{
+    height: 45vh;
+  }
+
+
+
+@media (max-width: 1400px) {
+  .project{
+    height: 60vh;
   }
   .project .top{
     height: 45vh;
@@ -107,4 +114,7 @@
   .project .top{
     height: 45vh;
   }
+  .project img{
+  height: 200%;
+}
 }

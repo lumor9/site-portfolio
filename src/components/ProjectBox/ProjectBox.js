@@ -17,7 +17,7 @@ let projects = [{
     {
         title: 'Интернет-магазин',
         description:`Сайт с каталогом товаров, поиском, сортировкой и корзиной. Сохранение корзины с помощью локального хранилища`,
-        img:`${process.env.PUBLIC_URL}/assets/VictoryVoice.jpg`,
+        img:`${process.env.PUBLIC_URL}/assets/Shop.png`,
         technologies: ['React', 'Redux', 'JS', 'Bootstrap'],
     },
 ]
