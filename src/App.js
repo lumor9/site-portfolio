@@ -65,7 +65,7 @@ function App() {
               >
                 <InfoBlock title='Контакты' srcImg={`${process.env.PUBLIC_URL}/assets/Link.png`}> 
                   <nav className='d-flex flex-lg-row flex-column justify-content-sm-around gap-4 h-100 align-items-lg-start align-items-center'>
-                    <li><a href='mailto:andronovaarina70@gmail.com'>Почта</a></li>
+                    <li><a href='mailto:lumornith@yandex.ru'>Почта</a></li>
                     <li><a href='https://t.me/lumor9'>Телеграм</a></li>
                     <li><a href='https://github.com/lumor9'>Гитхаб</a></li>
                     <li><a href='https://github.com/lumor9'>Резюме</a></li>
